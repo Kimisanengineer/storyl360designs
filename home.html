@@ -1,7 +1,92 @@
-<iframe 
-  src="https://s3.us-west-2.amazonaws.com/collaborate.uw.edu/NEPQR_Modules/Promoting_Health_Equity_Module_20230328/story.html" 
-  width="980" 
-  height="658" 
-  frameborder="0" 
-  allowfullscreen>
-</iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promoting Health Equity Module</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .top-half {
+      background-color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .top-half h1 {
+      font-size: 2.5rem;
+      color: #7030A0;
+      margin-bottom: 20px;
+    }
+
+    .top-half p {
+      font-size: 1.2rem;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .bottom-half {
+      background-color: #7030A0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    iframe {
+      width: 980px;
+      height: 658px;
+      border: none;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      max-width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      iframe {
+        height: 550px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-half">
+      <h1>Promoting Health Equity</h1>
+      <p>
+        Explore this interactive learning module designed to foster inclusive, patient-centered care practices. 
+        Learn how healthcare professionals can identify and reduce disparities to promote equitable health outcomes 
+        for all individuals and communities.
+      </p>
+    </div>
+    <div class="bottom-half">
+      <iframe 
+        src="https://s3.us-west-2.amazonaws.com/collaborate.uw.edu/NEPQR_Modules/Promoting_Health_Equity_Module_20230328/story.html" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
